@@ -9,13 +9,13 @@ const ReadNote = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("https://solowhisperr.vercel.app/readnote/" + id)
+      .get("https://solowish.vercel.app/readnote/" + id)
       .then((result) => setStory(result.data))
       .catch((err) => console.log(err));
   });
   const handleDelete = (id) => {
     axios
-      .delete("https://solowhisperr.vercel.app/deletenote/" + id)
+      .delete("https://solowish.vercel.app/deletenote/" + id)
       .then((result) => {
         if (result.data == "Success") {
           navigate("/note");
