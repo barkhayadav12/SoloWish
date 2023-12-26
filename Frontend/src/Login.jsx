@@ -9,7 +9,7 @@ const Login = () => {
     const navigate=useNavigate();
     function handleSubmit(e){
         e.preventDefault();
-        axios.post('https://solowishh.vercel.app/login',{email,password})
+        axios.post('https://solowish.vercel.app/login',{email,password})
         .then(result=>{
             if(result.data==="Successfully logged in!")
             {
