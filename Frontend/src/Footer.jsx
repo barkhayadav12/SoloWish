@@ -16,7 +16,7 @@ const Footer = () => {
       }}
     >
       <a class="nav-item nav-link active" href="#">
-        <Link to="/" class="text-decoration-none text-muted">
+        <Link to="/home" class="text-decoration-none text-muted">
       
           <svg
             xmlns="http://www.w3.org/2000/svg"
