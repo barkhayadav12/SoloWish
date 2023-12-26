@@ -11,7 +11,7 @@ const WriteNote = () => {
         .then(result=>{
             if(result.data=='Success')
             {
-                navigate('/home');
+                navigate('/');
             }
         })
         .catch(err=>console.log(err))
