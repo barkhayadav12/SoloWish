@@ -7,7 +7,7 @@ const Edit = () => {
   const navigate = useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
-    axios.put("https://localhost:3003/editPost/"+id, {description})
+    axios.put("https://solowish.vercel.app/editPost/"+id, {description})
       .then((result) => {
         if (result.data === "Success") {
           navigate("/home");
