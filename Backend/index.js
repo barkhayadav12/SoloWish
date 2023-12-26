@@ -17,7 +17,9 @@ app.use(express.json());
 app.use(cors());
 
 
-
+app.get('/',(req,res)=>{
+  res.send('<h1>SoloWhisper</h1>')
+});
 
 app.get('/home', (req, res) => {
   return res.json({email: req.email, username: req.username})
