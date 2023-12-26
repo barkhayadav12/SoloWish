@@ -9,7 +9,7 @@ const Register = () => {
     const navigate=useNavigate();
     function handleSubmit(e){
         e.preventDefault();
-        axios.post('http://localhost:3003/',{username,email,password})
+        axios.post('https://solowish.vercel.app/',{username,email,password})
         .then(result=>navigate('/login'))
         .catch(error=>console.log(error));
     }
