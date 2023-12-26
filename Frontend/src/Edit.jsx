@@ -10,7 +10,7 @@ const Edit = () => {
     axios.put("https://solowish.vercel.app/editPost/"+id, {description})
       .then((result) => {
         if (result.data === "Success") {
-          navigate("/");
+          navigate("/home");
         }
         console.log(result);
       })
