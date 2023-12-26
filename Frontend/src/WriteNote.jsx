@@ -7,7 +7,7 @@ const WriteNote = () => {
     const navigate=useNavigate();
     function handleSubmit(e){
         e.preventDefault();
-        axios.post('http://localhost:3003/writenote',{title:title,description:description})
+        axios.post('https://solowish.vercel.app/writenote',{title:title,description:description})
         .then(result=>{
             if(result.data=='Success')
             {
