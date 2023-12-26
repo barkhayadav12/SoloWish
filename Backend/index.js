@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.get('/',(req,res)=>{
+app.get('/home',(req,res)=>{
   res.send('<h1>SoloWhisper</h1>')
 });
 
@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   return res.json({email: req.email, username: req.username})
 })
 
-app.post("/register", (req, res) => {
+app.post("/", (req, res) => {
   const { username, email, password } = req.body;
   bcrypt
     .hash(password, 10)
