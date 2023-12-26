@@ -21,11 +21,11 @@ app.get('/',(req,res)=>{
   res.send('<h1>SoloWhisper</h1>')
 });
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   return res.json({email: req.email, username: req.username})
 })
 
-app.post("/", (req, res) => {
+app.post("/register", (req, res) => {
   const { username, email, password } = req.body;
   bcrypt
     .hash(password, 10)
