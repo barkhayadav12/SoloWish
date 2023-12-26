@@ -6,7 +6,7 @@ import Footer from './Footer'
 const Home = () => {
     const [story,setStory]=useState([])
     useEffect(()=>{
-        axios.get('http://localhost:3003/note')
+        axios.get('https://solowish.vercel.app/note')
         .then(result=>setStory(result.data))
         .catch(err=>console.log(err))
     },[])
